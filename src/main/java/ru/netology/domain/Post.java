@@ -6,7 +6,7 @@ public class Post {
     private int authorId;
     private int data;
     private String text;
-    private String friendOnly;
+    private int friendOnly;
     private CommentsInfo CommentsInfo;
     private Like Like;
     private Repost Repost;
@@ -18,41 +18,22 @@ public class Post {
     private int canDelete;
     private int canEdit;
     private int isFix;
+    private int createdBy;
+    private int replyOwnerId;
+    private int replyPostId;
+    private String postType;
+    private String postSource;
+    private int signerId;
+    private int canPin;
+    private int isPinned;
+    private int markedAsAds;
+    private int isFavorite;
+    private int postponedId;
 
     public Post() {
     }
 
-    public String getId() {
-        return id;
-    }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getOwnerId() {
-        return ownerId;
-    }
-
-    public void setOwnerId(String ownerId) {
-        this.ownerId = ownerId;
-    }
-
-    public String getAuthorId() {
-        return authorId;
-    }
-
-    public void setAuthorId(String authorId) {
-        this.authorId = authorId;
-    }
-
-    public String getData() {
-        return data;
-    }
-
-    public void setData(String data) {
-        this.data = data;
-    }
 
     public String getText() {
         return text;
@@ -62,13 +43,6 @@ public class Post {
         this.text = text;
     }
 
-    public boolean isFriend() {
-        return friendOnly;
-    }
-
-    public void setFriend(boolean friend) {
-        this.friendOnly = friendOnly;
-    }
 
     public void setId(int id) {
         this.id = id;
@@ -84,14 +58,6 @@ public class Post {
 
     public void setData(int data) {
         this.data = data;
-    }
-
-    public String getFriendOnly() {
-        return friendOnly;
-    }
-
-    public void setFriendOnly(String friendOnly) {
-        this.friendOnly = friendOnly;
     }
 
     public ru.netology.domain.CommentsInfo getCommentsInfo() {
@@ -180,6 +146,118 @@ public class Post {
 
     public void setIsFix(int isFix) {
         this.isFix = isFix;
+    }
+
+    public int getCreatedBy() {
+        return createdBy;
+    }
+
+    public void setCreatedBy(int createdBy) {
+        this.createdBy = createdBy;
+    }
+
+    public int getReplyOwnerId() {
+        return replyOwnerId;
+    }
+
+    public void setReplyOwnerId(int replyOwnerId) {
+        this.replyOwnerId = replyOwnerId;
+    }
+
+    public int getReplyPostId() {
+        return replyPostId;
+    }
+
+    public void setReplyPostId(int replyPostId) {
+        this.replyPostId = replyPostId;
+    }
+
+    public String getPostType() {
+        return postType;
+    }
+
+    public void setPostType(String postType) {
+        this.postType = postType;
+    }
+
+    public String getPostSource() {
+        return postSource;
+    }
+
+    public void setPostSource(String postSource) {
+        this.postSource = postSource;
+    }
+
+    public int getSignerId() {
+        return signerId;
+    }
+
+    public void setSignerId(int signerId) {
+        this.signerId = signerId;
+    }
+
+    public int getCanPin() {
+        return canPin;
+    }
+
+    public void setCanPin(int canPin) {
+        this.canPin = canPin;
+    }
+
+    public int getIsPinned() {
+        return isPinned;
+    }
+
+    public void setIsPinned(int isPinned) {
+        this.isPinned = isPinned;
+    }
+
+    public int getMarkedAsAds() {
+        return markedAsAds;
+    }
+
+    public void setMarkedAsAds(int markedAsAds) {
+        this.markedAsAds = markedAsAds;
+    }
+
+    public int getIsFavorite() {
+        return isFavorite;
+    }
+
+    public void setIsFavorite(int isFavorite) {
+        this.isFavorite = isFavorite;
+    }
+
+    public int getPostponedId() {
+        return postponedId;
+    }
+
+    public void setPostponedId(int postponedId) {
+        this.postponedId = postponedId;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public int getAuthorId() {
+        return authorId;
+    }
+
+    public int getData() {
+        return data;
+    }
+
+    public void setFriendOnly(int friendOnly) {
+        this.friendOnly = friendOnly;
+    }
+
+    public int getFriendOnly() {
+        return friendOnly;
     }
 }
 
