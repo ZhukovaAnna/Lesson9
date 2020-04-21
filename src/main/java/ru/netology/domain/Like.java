@@ -1,9 +1,41 @@
 package ru.netology.domain;
 
 public class Like {
-    private String count;
+    private int count;
     private boolean userLike;
     private boolean canLike;
-    private boolean canpublish;
+    private boolean lowerCamelCase;
 
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public boolean isUserLike() {
+        return userLike;
+    }
+
+    public void setUserLike(boolean userLike) {
+        this.userLike = userLike;
+    }
+
+    public boolean isCanLike() {
+        return canLike;
+    }
+
+    public void setCanLike(boolean canLike) {
+        this.canLike = canLike;
+    }
+
+    public boolean isLowerCamelCase() {
+        return lowerCamelCase;
+    }
+
+    public void setLowerCamelCase(boolean lowerCamelCase) {
+        this.lowerCamelCase = lowerCamelCase;
+    }
 }
+

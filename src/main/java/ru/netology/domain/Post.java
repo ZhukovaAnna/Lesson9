@@ -10,8 +10,7 @@ public class Post {
     private CommentsInfo CommentsInfo;
     private Like Like;
     private Repost Repost;
-    private String view;
-    private Attachmen Attachmen;
+    private int view;
     private Geolocation Geolocation;
     private String history;
     private int canFix;
@@ -24,16 +23,48 @@ public class Post {
     private String postType;
     private String postSource;
     private int signerId;
-    private int canPin;
     private int isPinned;
     private int markedAsAds;
     private int isFavorite;
     private int postponedId;
+    private Photo Photo;
+    private Video Video;
 
     public Post() {
     }
 
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
+    }
+
+    public int getAuthorId() {
+        return authorId;
+    }
+
+    public void setAuthorId(int authorId) {
+        this.authorId = authorId;
+    }
+
+    public int getData() {
+        return data;
+    }
+
+    public void setData(int data) {
+        this.data = data;
+    }
 
     public String getText() {
         return text;
@@ -43,21 +74,12 @@ public class Post {
         this.text = text;
     }
 
-
-    public void setId(int id) {
-        this.id = id;
+    public int getFriendOnly() {
+        return friendOnly;
     }
 
-    public void setOwnerId(int ownerId) {
-        this.ownerId = ownerId;
-    }
-
-    public void setAuthorId(int authorId) {
-        this.authorId = authorId;
-    }
-
-    public void setData(int data) {
-        this.data = data;
+    public void setFriendOnly(int friendOnly) {
+        this.friendOnly = friendOnly;
     }
 
     public ru.netology.domain.CommentsInfo getCommentsInfo() {
@@ -84,20 +106,12 @@ public class Post {
         Repost = repost;
     }
 
-    public String getView() {
+    public int getView() {
         return view;
     }
 
-    public void setView(String view) {
+    public void setView(int view) {
         this.view = view;
-    }
-
-    public ru.netology.domain.Attachmen getAttachmen() {
-        return Attachmen;
-    }
-
-    public void setAttachmen(ru.netology.domain.Attachmen attachmen) {
-        Attachmen = attachmen;
     }
 
     public ru.netology.domain.Geolocation getGeolocation() {
@@ -196,14 +210,6 @@ public class Post {
         this.signerId = signerId;
     }
 
-    public int getCanPin() {
-        return canPin;
-    }
-
-    public void setCanPin(int canPin) {
-        this.canPin = canPin;
-    }
-
     public int getIsPinned() {
         return isPinned;
     }
@@ -236,28 +242,20 @@ public class Post {
         this.postponedId = postponedId;
     }
 
-    public int getId() {
-        return id;
+    public ru.netology.domain.Photo getPhoto() {
+        return Photo;
     }
 
-    public int getOwnerId() {
-        return ownerId;
+    public void setPhoto(ru.netology.domain.Photo photo) {
+        Photo = photo;
     }
 
-    public int getAuthorId() {
-        return authorId;
+    public ru.netology.domain.Video getVideo() {
+        return Video;
     }
 
-    public int getData() {
-        return data;
-    }
-
-    public void setFriendOnly(int friendOnly) {
-        this.friendOnly = friendOnly;
-    }
-
-    public int getFriendOnly() {
-        return friendOnly;
+    public void setVideo(ru.netology.domain.Video video) {
+        Video = video;
     }
 }
 
