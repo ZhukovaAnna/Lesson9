@@ -4,7 +4,8 @@ public class Like {
     private int count;
     private boolean userLike;
     private boolean canLike;
-    private boolean lowerCamelCase;
+    private boolean canPublish;
+
 
     public int getCount() {
         return count;
@@ -30,12 +31,11 @@ public class Like {
         this.canLike = canLike;
     }
 
-    public boolean isLowerCamelCase() {
-        return lowerCamelCase;
+    public boolean isCanPublish() {
+        return canPublish;
     }
 
-    public void setLowerCamelCase(boolean lowerCamelCase) {
-        this.lowerCamelCase = lowerCamelCase;
+    public void setCanPublish(boolean canPublish) {
+        this.canPublish = canPublish;
     }
 }
-
